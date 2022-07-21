@@ -63,5 +63,23 @@ namespace test1
             this.label3.Text = (Instance.b1 + Instance.b2).ToString();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            for(int a = 0; a < 10; a++)
+            {
+                this.label4.Text += a.ToString();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int sum = 0;
+            for (int a = 0; a < 10; a++)
+            {
+                sum += a;
+                this.label4.Text = sum.ToString();
+            }
+        }
     }
 }
